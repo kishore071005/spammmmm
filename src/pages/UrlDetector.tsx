@@ -63,16 +63,16 @@ export default function UrlDetector() {
       {/* Input Section */}
       <div className="glass-card p-6">
         <form onSubmit={handleScan} className="flex gap-4">
-          <div className="flex-1 relative">
-            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-              <span className="text-slate-500 font-mono">https://</span>
+          <div className="flex-1 flex items-stretch rounded-xl border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.04)] focus-within:border-brand-500/50 focus-within:bg-brand-500/5 focus-within:shadow-[0_0_0_3px_rgba(99,102,241,0.15)] transition-all overflow-hidden">
+            <div className="flex items-center pl-4 pr-1">
+              <span className="text-slate-500 font-mono text-lg">https://</span>
             </div>
             <input
               type="text"
               value={url}
               onChange={e => setUrl(e.target.value)}
               placeholder="example.com/job-application"
-              className="cyber-input w-full pl-20 py-4 text-lg font-mono"
+              className="w-full bg-transparent py-4 pr-4 text-lg font-mono text-white outline-none placeholder:text-[rgba(148,163,184,0.6)]"
               required
             />
           </div>
