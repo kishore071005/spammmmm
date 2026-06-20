@@ -10,7 +10,6 @@ interface StatCardProps {
     isPositive: boolean
   }
   colorClass?: string
-  glowColor?: string
 }
 
 function useCountUp(target: number, duration = 1200) {
@@ -36,7 +35,7 @@ function useCountUp(target: number, duration = 1200) {
   return count
 }
 
-export default function StatCard({ title, value, icon: Icon, trend, colorClass = 'text-indigo-400', glowColor }: StatCardProps) {
+export default function StatCard({ title, value, icon: Icon, trend, colorClass = 'text-indigo-400' }: StatCardProps) {
   const numericValue = typeof value === 'number' ? value : parseInt(value) || 0
   const displayValue = typeof value === 'number' ? useCountUp(numericValue) : value
 

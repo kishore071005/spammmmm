@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Brain, AlertTriangle, CheckCircle2, TrendingUp, ChevronRight, Sparkles } from 'lucide-react'
+import { Brain, AlertTriangle, CheckCircle2, TrendingUp, Sparkles } from 'lucide-react'
 
 const insights = [
   {

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 import {
   LayoutDashboard, Link2, MessageSquareText, FileText, ShieldAlert,
-  LogOut, BarChart3, Clock, Settings, ChevronLeft, ChevronRight, Menu, X
+  LogOut, ChevronLeft, ChevronRight, Menu, X
 } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 import { signOut } from '../services/supabase'
