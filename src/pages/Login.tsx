@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Shield, Eye, EyeOff, Mail, Lock, User, Globe, AlertCircle } from 'lucide-react'
-import { signIn, signUp, signInWithGoogle } from '../services/supabase'
+import { Shield, Eye, EyeOff, Mail, Lock, User, AlertCircle } from 'lucide-react'
+import { signIn, signUp } from '../services/supabase'
 import toast from 'react-hot-toast'
 
 export default function Login() {
@@ -40,14 +40,7 @@ export default function Login() {
     }
   }
 
-  const handleGoogle = async () => {
-    setLoading(true)
-    const { error } = await signInWithGoogle()
-    if (error) {
-      toast.error(error.message)
-      setLoading(false)
-    }
-  }
+
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4 hero-bg"
@@ -155,29 +148,7 @@ export default function Login() {
             </button>
           </form>
 
-          {/* Divider */}
-          <div className="flex items-center gap-4 my-5">
-            <div style={{ flex: 1, height: 1, background: 'rgba(255,255,255,0.08)' }} />
-            <span style={{ color: 'rgba(148,163,184,0.5)', fontSize: '0.8rem' }}>or continue with</span>
-            <div style={{ flex: 1, height: 1, background: 'rgba(255,255,255,0.08)' }} />
-          </div>
 
-          {/* Google */}
-          <button
-            id="google-auth-btn"
-            onClick={handleGoogle}
-            disabled={loading}
-            className="w-full flex items-center justify-center gap-3 py-3 rounded-xl font-medium text-sm transition-all duration-300"
-            style={{
-              background: 'rgba(255,255,255,0.04)',
-              border: '1px solid rgba(255,255,255,0.1)',
-              color: '#e2e8f0',
-            }}
-            onMouseEnter={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.08)')}
-            onMouseLeave={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.04)')}>
-            <Globe className="w-5 h-5" style={{ color: '#4285f4' }} />
-            Continue with Google
-          </button>
         </div>
 
         <p className="text-center mt-6" style={{ color: 'rgba(148,163,184,0.5)', fontSize: '0.8rem' }}>
