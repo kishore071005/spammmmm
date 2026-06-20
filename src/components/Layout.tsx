@@ -21,9 +21,9 @@ export default function Layout() {
   ]
 
   return (
-    <div className="flex h-screen overflow-hidden bg-[#07070f] text-[#e2e8f0]">
+    <div className="flex h-screen overflow-hidden bg-gradient-to-br from-indigo-900 via-purple-900 to-[#07070f] text-[#e2e8f0]">
       {/* Sidebar */}
-      <aside className="w-64 border-r border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.02)] flex flex-col hidden md:flex">
+      <aside className="w-64 border-r border-[rgba(255,255,255,0.08)] glass-card flex flex-col hidden md:flex">
         {/* Logo */}
         <div className="h-16 flex items-center px-6 border-b border-[rgba(255,255,255,0.08)]">
           <div className="flex items-center gap-3 text-indigo-400 font-bold text-xl">
