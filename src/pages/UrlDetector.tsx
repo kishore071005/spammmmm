@@ -29,7 +29,7 @@ export default function UrlDetector() {
       const heuristics = analyzeUrlHeuristics(url)
       
       // 2. Groq AI Analysis
-      const aiResult = await analyzeUrl(url, heuristics)
+      const aiResult = await analyzeUrl(url, heuristics as unknown as Record<string, unknown>)
       setResult(aiResult)
 
       // 3. Save to Supabase

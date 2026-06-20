@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { ShieldAlert, Trash2, Plus, Users, Search } from 'lucide-react'
+import { ShieldAlert, Trash2, Plus, Users } from 'lucide-react'
 import { getAllScans, getAllUsers, getBlacklistedDomains, addBlacklistedDomain, removeBlacklistedDomain } from '../services/supabase'
 import { formatRelativeTime } from '../services/heuristics'
 import toast from 'react-hot-toast'

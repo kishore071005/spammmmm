@@ -1,5 +1,5 @@
 import { NavLink, Outlet, useNavigate } from 'react-router-dom'
-import { LayoutDashboard, Link2, MessageSquareText, FileText, ShieldAlert, LogOut, Settings } from 'lucide-react'
+import { LayoutDashboard, Link2, MessageSquareText, FileText, ShieldAlert, LogOut } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 import { signOut } from '../services/supabase'
 

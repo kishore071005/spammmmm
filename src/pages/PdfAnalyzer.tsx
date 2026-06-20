@@ -1,4 +1,4 @@
-import { useState, useCallback, useRef } from 'react'
+import { useState, useCallback } from 'react'
 import { useDropzone } from 'react-dropzone'
 import { FileText, UploadCloud, ShieldCheck, AlertTriangle, ShieldAlert, CheckCircle2, FileWarning } from 'lucide-react'
 import * as pdfjsLib from 'pdfjs-dist'
