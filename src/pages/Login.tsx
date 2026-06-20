@@ -60,9 +60,9 @@ export default function Login() {
             style={{ background: 'linear-gradient(135deg, #4f46e5, #7c3aed)', boxShadow: '0 0 30px rgba(99,102,241,0.5)' }}>
             <Shield className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-3xl font-bold gradient-text">SafeHire AI</h1>
+          <h1 className="text-3xl font-bold gradient-text">Scam Shield</h1>
           <p style={{ color: 'rgba(148,163,184,0.8)', fontSize: '0.9rem', marginTop: 8 }}>
-            AI-Powered Job Fraud Detection
+            AI Powered Multi-Source Fraud Detection
           </p>
         </div>
 
@@ -181,7 +181,7 @@ export default function Login() {
         </div>
 
         <p className="text-center mt-6" style={{ color: 'rgba(148,163,184,0.5)', fontSize: '0.8rem' }}>
-          Protected by advanced AI fraud detection
+          Scam Shield — Detect. Analyze. Protect.
         </p>
       </div>
     </div>
